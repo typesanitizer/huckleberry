@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
-  --left-margin: 20px;
+  --left-margin: 24px;
   --max-card-width: 625px;
 }
 
@@ -12,7 +12,7 @@ body {
 }
 
 header {
-  border-bottom: 10px solid grey;
+  border-bottom: 8px solid hsl(0deg, 0%, 40%);
   padding-top: 80px;
   padding-bottom: 40px;
 }
@@ -20,12 +20,12 @@ header {
 .intro-chunk {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 20px;
+  padding-left: 24px;
   max-width: var(--max-card-width);
 }
 
 .intro-chunk strong {
-  color: #009966;
+  color: hsl(160deg, 100%, 30%);
 }
 
 .intro-chunk > p {
@@ -33,7 +33,7 @@ header {
 }
 
 main {
-  background-color: #989998;
+  background-color: hsl(0deg, 0%, 60%);
 
   padding-top: 40px;
   padding-bottom: 40px;
@@ -41,10 +41,10 @@ main {
 
 .card {
   background-color: #fefffe;
-  border-bottom: 10px solid grey;
+  border-bottom: 8px solid hsl(0deg, 0%, 40%);
 
-  padding-top: 10px;
-  padding-left: 20px;
+  padding-top: 8px;
+  padding-left: 24px;
   padding-right: 40px;
 
   margin-left: auto;
@@ -53,15 +53,15 @@ main {
 }
 
 .indented-heading {
-  border-bottom: 10px solid #ca9800;
-  background-color: #febe00;
+  background-color: hsl(45deg, 100%, 50%);
+  border-bottom: 8px solid hsl(45deg, 100%, 40%);
   width: fit-content;
   padding-top: 15px;
   padding-bottom: 15px;
-  padding-right: 30px;
-  padding-left: 30px;
-  margin-left: -30px;
-  margin-right: 20px;
+  padding-right: 32px;
+  padding-left: 32px;
+  margin-left: -32px;
+  margin-right: 8px;
 
   /* No idea why setting this is needed,
    * but somehow it automatically
