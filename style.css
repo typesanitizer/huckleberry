@@ -1,6 +1,8 @@
 * {
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
+  --left-margin: 20px;
+  --max-card-width: 625px;
 }
 
 html,
@@ -9,4 +11,61 @@ body {
   padding: 0;
 }
 
-/* Add styles here! */
+header {
+  border-bottom: 10px solid grey;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.intro-chunk {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  max-width: var(--max-card-width);
+}
+
+.intro-chunk strong {
+  color: #009966;
+}
+
+.intro-chunk > p {
+  max-width: 320px;
+}
+
+main {
+  background-color: #989998;
+
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.card {
+  background-color: #fefffe;
+  border-bottom: 10px solid grey;
+
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 40px;
+
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--max-card-width);
+}
+
+.indented-heading {
+  border-bottom: 10px solid #ca9800;
+  background-color: #febe00;
+  width: fit-content;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-left: -30px;
+  margin-right: 20px;
+
+  /* No idea why setting this is needed,
+   * but somehow it automatically
+   * picks up margin without this */
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
